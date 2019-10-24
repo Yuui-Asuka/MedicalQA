@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{07eb84f9-6774-492b-b214-9c484894f95f}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>app.py</StartupFile>
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="AnswerDataPrepared.py" />
+    <Compile Include="app.py" />
+    <Compile Include="ClassificationModel.py" />
+    <Compile Include="Config.py" />
+    <Compile Include="DataGenerater.py" />
+    <Compile Include="DataPrepared.py" />
+    <Compile Include="DepartmentClassification.py" />
+    <Compile Include="FullBack.py" />
+    <Compile Include="MatchQuestion.py" />
+    <Compile Include="module1.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TermsSearch.py" />
+    <Compile Include="Utils.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="symptom\buwei.txt" />
+    <Content Include="symptom\disease.txt" />
+    <Content Include="symptom\imple.txt" />
+    <Content Include="symptom\symptom.txt" />
+    <Content Include="symptom\xunyiwenyao.txt" />
+    <Content Include="symptom\yixuedaquan1.txt" />
+    <Content Include="symptom\yixuedaquan2.txt" />
+    <Content Include="train\testSet.txt" />
+    <Content Include="train\trainSet.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="symptom" />
+    <Folder Include="train" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+</Project>
